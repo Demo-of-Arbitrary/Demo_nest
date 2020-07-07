@@ -1,0 +1,15 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Query {
+  user(id: Int!): User!
+}
+
+type User {
+  id: Int!
+  name: String!
+
+  """user email"""
+  email: String @deprecated(reason: "no need")
+}

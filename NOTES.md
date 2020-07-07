@@ -30,13 +30,18 @@ I hear some company use more than one database in one project. maybe it's the va
 sqlite and postgre both fail to bootstrap, finally works on mysql
 not sure the purpose of write  model in `schema.prisma`, thought it can generate model automatically, turn out it didn't, still need to create table in mysql database
 
+## graphql
+
+### steps
+1. `npm i @nestjs/graphql graphql-tools graphql apollo-server-express`
+2. `write resolver`
+3. note: need remove `dist` if run in watch mode, it's a bug
+
 
 
 ## todo
-- [ ] prisma tools
-- [ ] graphql
 
 refs:
 1. [prisma doc](https://www.prisma.io/docs/getting-started/quickstart-typescript#prerequisites)
-2. [nestjs](https://docs.nestjs.com/controllers)
+2. [nestjs](https://docs.nestjs.com/controllers) / [chinese](https://docs.nestjs.cn/7/controllers?id=%e8%af%b7%e6%b1%82%e8%b4%9f%e8%bd%bd)
 3. [chinese doc](http://www.postgres.cn/docs/11/)
