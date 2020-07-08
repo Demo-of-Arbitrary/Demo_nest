@@ -1,4 +1,5 @@
 import { Field, Int, ObjectType, InputType } from '@nestjs/graphql';
+import { Post } from '../post/post.model';
 
 @ObjectType()
 export class User {
@@ -12,6 +13,8 @@ export class User {
     deprecationReason: 'no need'
   })
   email: string
+  @Field(type =>[Post])
+  posts: Post[]
 }
 
 @InputType()

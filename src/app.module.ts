@@ -4,6 +4,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { UserModule } from './modules/user/user.module';
 import { join } from 'path';
+import { PostModule } from './modules/post/post.module';
 
 @Module({
   imports: [
@@ -18,7 +19,8 @@ import { join } from 'path';
       // definitions: {
       //   path: join(process.cwd(), 'src/graphql.ts'),
       // },
-    })],
+    }),
+    PostModule],
   controllers: [AppController],
   providers: [AppService],
 })
