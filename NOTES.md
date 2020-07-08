@@ -37,9 +37,25 @@ not sure the purpose of write  model in `schema.prisma`, thought it can generate
 2. `write resolver`
 3. note: need remove `dist` if run in watch mode, it's a bug
 
+### playground
+```graphql
+query {
+  user(id:1){
+    id,
+    name
+  }
+  users {
+    id,
+    name,
+    email
+  }
+}
+```
 
 
 ## todo
+- [ ] post
+- [ ] relations
 
 refs:
 1. [prisma doc](https://www.prisma.io/docs/getting-started/quickstart-typescript#prerequisites)

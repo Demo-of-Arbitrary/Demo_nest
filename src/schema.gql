@@ -2,8 +2,13 @@
 # THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
 # ------------------------------------------------------
 
+type Mutation {
+  createUser(user: UserInput!): User!
+}
+
 type Query {
   user(id: Int!): User!
+  users: [User!]!
 }
 
 type User {
@@ -12,4 +17,9 @@ type User {
 
   """user email"""
   email: String @deprecated(reason: "no need")
+}
+
+input UserInput {
+  name: String!
+  email: String!
 }
